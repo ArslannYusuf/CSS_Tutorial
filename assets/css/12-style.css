@@ -1,0 +1,36 @@
+a:link{
+    color: goldenrod;
+    font-size: 1.4rem;
+}
+
+/* daha önce ziyarert edilmemiş linkler icin kullaniyoruz */
+
+a:visited{
+    color: brown;
+}
+
+/* ziyaret edilmis linklerin gorunum icin kullaniyoruz */
+
+a:hover{
+    color: rgb(78, 147, 78);
+    background-color: rgb(171, 2, 36);
+    cursor: pointer;
+}
+
+/* mouseun herhangi bir noktada oldugunu soyluyor */
+
+h1.title{
+    color: rgb(46, 23, 178);
+    text-align: center;
+}
+
+h1.title:hover{
+    color: rgb(255, 0, 0);
+    background-color: gray;
+}
+
+a:active{
+    color: rgb(211, 26, 174);
+}
+
+/* sol click yaptigimiz esnada etklesim oldugunu gostermek icin kullaniyoruz */
