@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Fonts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/09-style.css" />
+    <style>
+      h1.title {
+        font-family: "Roboto", sans-serif;
+        font-weight: 800;
+        font-style: italic;
+      }
+
+      p.content {
+        font-family: "Dancing Script", cursive;
+        font-weight: 700;
+        font-size: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Google Fonts</h1>
+
+    <!-- google fonts alma aşamaları...
+        
+        1.yol;
+
+    1- https://fonts.google.com/ sayfasına git
+    2- herhangi bir famly seç (roboto, merriweather, noto sans, etc)
+    3- açılan sayfada (sağ üst) "get font"a tıkla
+    4- açılan sayfada "size"lardan seçimler yap
+    5- seçimle birlikte gelen (sağ tarafta) <link> tagı ile gelen "copy code" tıklayarak kodu alıyorum
+    6- aldığımız kodu <head> içerisinde <title> altına yapıştır
+    
+        Not: ayrıca google sayfasından secimler arasında font-family seçerek 
+             internal style olarak ilgili tag'e class atribute verip kullanabilirim
+-->
+    <br />
+
+    <p class="content">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, sit!
+    </p>
+
+    <!-- 
+        2.yol;
+    1- https://fonts.google.com/ sayfasına git
+    2- herhangi bir famly seç (roboto, merriweather, noto sans, etc)
+    3- açılan sayfada (sağ üst) "get font"a tıkla
+    4- açılan sayfada "size"lardan seçimler yap
+    5- seçimle birlikte gelen (sağ tarafta) @import ile gelen "copy code" tıklayarak kodu alıyorum
+    6- aldığımız kodu css dosyasında yapıştır ve sayfanın kendisi style oldugu için <style> taglarını sil
+
+        Not: ayrıca google sayfasından secimler arasında font-family seçerek 
+             css dosyasında ilgili class baglantısını yazarak font-family'i kullanabilirim
+
+     -->
+    <h2 class="tutor">Google Fonts Tutorial</h2>
+  </body>
+</html>

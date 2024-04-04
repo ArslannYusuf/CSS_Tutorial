@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector-1</title>
+    <style>
+      * {
+        color: springgreen;
+        background-color: steelblue;
+      }
+
+      p {
+        color: yellow;
+        font-size: 1.3rem;
+      }
+
+      p.pEl {
+        color: rgb(230, 64, 113);
+        background-color: violet;
+      }
+      /* p.pEl ile <p> tagındaki pEl classını kullandık ve daha da özellestirdik, haliyle alttakini ezdi */
+
+      .pEl {
+        color: red;
+        background-color: rgb(180, 156, 58);
+      }
+
+      #cssId {
+          background-color: goldenrod;
+          color: crimson;
+          text-align: center;
+          font-weight: 700;
+          font-size: 2rem;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello Selector-1</h1>
+
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, ipsam animi
+      ducimus cum voluptatum numquam.
+    </p>
+
+    <br />
+
+    <ol>
+      <li>Lorem.</li>
+      <li>Dolorum.</li>
+      <li>Debitis.</li>
+      <li>Tempore.</li>
+      <li>Pariatur.</li>
+    </ol>
+    <br />
+
+    <p class="pEl">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, magni!
+    </p>
+
+    <h2 id="cssId">Css Tutorial</h2>
+  </body>
+</html>

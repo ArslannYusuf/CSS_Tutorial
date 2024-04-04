@@ -1,0 +1,32 @@
+nav.menu {
+  background-color: yellowgreen;
+  width: 300px;
+  text-align: center;
+  color: steelblue;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  cursor: pointer; /* tıkladıgınızda mouse'un hangi noktada oldugunu soyluyor */
+}
+
+h1.title {
+  color: purple;
+  text-align: center;
+}
+
+div.active {
+    background-color: rgb(145, 228, 12);
+    color: rgb(255, 1, 1);
+  }
+
+nav.menu div.active {
+  background-color: aqua;
+  color: violet;
+}
+/* 
+html sayfasındaki;
+<nav class="menu">
+    <div class="active">Homepage</div>
+
+    yukarıdaki syntax'i "nav.menu div.active" şeklinde daha detaylı tanımladım
+    dolayısıyla "div.active" tanımını ezdi
+*/
