@@ -41,4 +41,28 @@ div.kutu-3{
         background-color: rgb(29, 114, 194);
         height: 50%;
         width: 50%;
+    }
+
+
+
+    div.kutu-2{
+        background-color: rgb(83, 155, 214);
+        height: 50vh;
+        width: 100vw;
         } 
+
+        /*  vw : viewport width 
+            vh : viewport height
+        Tarayici penceresinin viewport genisligine baglıdır.
+        Pencere genisligi degistikce bu degerlere baglı CSS degerleri (value) de etkilenir.
+        Parent genisligine bakmaz...  */
+
+
+        div.kutu-5{
+            
+            font-size: 3em;
+            } 
+            /* font-size: 2em; em parent'a gore degisiyor, kullanisli degil */
+            /* font-size: 2rem; rem parent'a gore degisiyor, kullanisli degil */
+
+
