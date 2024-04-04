@@ -1,0 +1,44 @@
+body,html{
+
+    width: 100%;
+    height: 100%;
+}
+
+/* div.kutu-1{
+background-color: red;
+height: 150px;
+width: 150px;
+} 
+
+bu sekilde sabit olculerde kalir ve ekranin buyume/kuculme durumlarinda degismez
+*/
+
+
+div.kutu-1{
+    background-color: red;
+    height: 50%;
+    width: 50%;
+    } 
+
+/* yukaridaki gibi % olarak olcu birimi 
+verdigimde sayfayi istenilen olculerde/tam ekran/kucultme 
+gibi durumlarda girilen degere gore dinamik olarakdegisim saglar */
+
+
+/* % deger vedigimde ilgili tag'in parent'ina gore olceklendirme yapar
+Or: Parten 80% - child 50%
+burada child parent'in 80'in 50'sini alir  ;)
+*/
+
+
+div.kutu-3{
+    background-color: rgb(31, 211, 18);
+    height: 50%;
+    width: 50%;
+    } 
+
+    div.kutu-4{
+        background-color: rgb(29, 114, 194);
+        height: 50%;
+        width: 50%;
+        } 
