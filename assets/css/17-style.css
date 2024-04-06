@@ -29,6 +29,7 @@ nav.nav-menu img {
 
 nav.nav-menu a:hover {
   color: crimson;
+  cursor: pointer;
 }
 
 main section {
