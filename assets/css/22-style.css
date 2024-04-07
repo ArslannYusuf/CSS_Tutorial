@@ -1,0 +1,32 @@
+body {
+  background-color: azure;
+}
+
+nav.navMenu ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  background-color: yellowgreen;
+  padding: 20px;
+}
+
+nav.navMenu ul li {
+  display: inline-block;
+}
+
+nav.navMenu ul li a {
+  text-decoration: none;
+  background-color: rgb(5, 28, 240);
+  color: lightgoldenrodyellow;
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding: 10px;
+  margin-top: 2rem;
+  margin-right: 10px;
+}
+
+nav.navMenu ul li a:hover {
+  background-color: rgb(224, 64, 64);
+  color: powderblue;
+  border-radius: 10px 0 10px 0; /* guzel sekil oldu ;) */
+}
