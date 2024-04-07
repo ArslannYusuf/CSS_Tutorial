@@ -1,0 +1,42 @@
+/* degisken olusturarak CSS icindeki degerler tek noktadan kolaylikla degistirilebilir
+    degisken olusturmak icin "root" kullanilir
+
+    :root{
+        --blue:#1e90ff;
+        --red:#ff0000;
+    }
+
+
+    body{
+        background-color: var(--blue);
+    }
+
+    h2{
+        color: var(--red);
+    }
+    
+ */
+
+:root {
+  --primary-color: #9b3922;
+  --secondary-color: #f2613f;
+  --border-color: #00224d;
+  --hover-color: #fda403;
+  --widthEl: 150px;
+  --heightEl: 70px;
+  --fontFamily: "Lato", sans-serif;
+}
+
+h1.title {
+  text-align: center;
+  color: var(--secondary-color);
+  background-color: var(--border-color);
+  font-family: var(--fontFamily);
+}
+
+button{
+    background-color: var(--primary-color);
+    width: var(--widthEl);
+    height: var(--heightEl);
+    cursor:pointer;
+}
