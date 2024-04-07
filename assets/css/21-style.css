@@ -1,0 +1,52 @@
+/* 
+!               == display ==
+    * inline : sadece metin, ihityaci kadar yer kaplar
+    * block : metin ve eleman, tüm satiri kaplar
+    * none : gizlenir
+    * inline-block : metin ve eleman, tüm satiri ve ihityaci kadar yer kaplar
+          width ve height ile de boyutlandırabiliriz
+    * flex : elemente flex ozelligi katarak elemanları yanyana hizalarak doldurabiliriz
+
+
+*/
+
+h1.block {
+  color: blue;
+  background-color: rgb(211, 77, 77);
+  margin-bottom: 2rem;
+  display: inline;
+  width: 150px; /* inline oldugu icin weight olmaz   */
+  height: 50px; /* inline oldugu icin height olmaz   */
+}
+
+span.inline {
+  color: red;
+  font-size: 1.5rem;
+  display: block;
+  background-color: yellowgreen;
+  margin-bottom: 2rem;
+  height: 200px;
+}
+
+p.pEL{
+    background-color: tomato;
+    padding: 15px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 2rem;
+
+}
+
+
+button.hidden{
+    display: none;  /* button gizlenmis olur, verilen degerleri alamaz */
+    font-size: 1.5rem;
+    font-weight: 800;
+    border: 5px solid black;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+/* button.hidden{
+    display: block;
+} */
