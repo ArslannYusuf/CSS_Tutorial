@@ -11,7 +11,7 @@ nav.navMenu ul {
 }
 
 nav.navMenu ul li {
-  display: inline-block;
+  display: inline-block; /* display degerini degistirdigim esnada alt-alta olan elementler yanyana nav bara geldi */
 }
 
 nav.navMenu ul li a {
