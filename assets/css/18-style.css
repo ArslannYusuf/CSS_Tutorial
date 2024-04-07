@@ -1,0 +1,64 @@
+*{
+    color: red;
+
+}
+.title{
+    color: green;
+}
+/* .title ile daha özel tanımlama verdim */
+h1{
+    color: blue;
+    text-align: center;
+    border: 5px red solid;
+}
+
+h1.title{
+    color: purple;
+}
+
+/* h1.title ile daha detaylı tanımlama yaparak yukarıdaki mavi rengi ezdik */
+
+p.p-1El{
+    color: aqua; !important
+}
+/* html sayfasında <style> ile color vermeme ragmen p.p-1El ile daha da detaylandırıp digerini ezdim 
+sonrasında html sayfasında color: blueviolet !important ; ile tüm p'leri baskkkın hale getirmiştim,
+ancak buradaki "p.p-1El" ile daha detay olmasından dolayı en baskın burası oldu
+
+ ? NE KADAR ÖZEL(detay) O KADAR EZER ;) 
+
+
+    *baskın olma halleri;
+!   !important > inline  > internal > external 
+
+   Note: tanımlamalar her zaman detaylı olmalı...
+
+*/
+
+h2{
+    background-color: chartreuse; !important
+}
+/*  burada !important vermeme ragmen html sayfasında da h2'yi internal olarak !important yaptıgımda 
+html sayfasındaki internal style baskın olmuş oldu */
+
+
+/* 
+html sayfasında <link rel="stylesheet" href="../assets/css/07-style.css" /> <head> içerisinde alt sıralara alırsam 
+yukarıdan aşağı kd okuma olacagından dolayı baskın olma halleri degisir
+*/
+
+.linkHover{
+    background-color: yellow;
+    font-size: 4rem;
+    text-decoration: none;
+}
+
+
+.linkHover:hover{
+    background-color: black;
+    color: white;
+}
+
+.linkHover:active{
+    color: goldenrod;
+}
