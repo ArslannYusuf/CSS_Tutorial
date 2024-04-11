@@ -1,0 +1,53 @@
+:root{
+    --color1:#FFAF45;
+    --color2:#FB6D48;
+    --color3:#D74B76;
+    --color4:#673F69;
+}
+
+nav.menu{
+    background-color: var(--color1);
+    text-align: center;
+
+}
+
+nav.menu ul{
+list-style-type: none;
+padding: 18px;
+}
+
+nav.menu ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav.menu ul li::after{
+    content: "  | ";
+    font-size: 1.3rem;
+    color: var(--color2);
+}
+
+nav.menu ul li:last-child::after{
+    content: "➡️";
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+nav.menu ul li:first-child::before{
+    content: "⬅️";
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+nav.menu ul li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--color4);
+    padding: 7px;
+}
+
+nav.menu ul li a:hover{
+    color: var(--color1);
+    background-color: var(--color2);
+    border-radius: 10px 0 10px 0;
+}
