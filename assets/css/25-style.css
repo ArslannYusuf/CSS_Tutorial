@@ -22,7 +22,7 @@ p.about::first-line {
 p.about::selection {
   color: red;
   background-color: yellow;
-} /* satirlarda seciliyken stil vermek icin */
+} /* element seciliyken stil vermek icin */
 
 ul.list li::marker {
   color: red;
@@ -33,13 +33,14 @@ h1.title::before {
   content: "👌";
   font-size: 2.6rem;
   margin-right: 1.3rem;
-}
+}/* before secilen selectorun basina content'i ekleyebiliriz */
 
 h1.title::after {
   content: "👍";
   font-size: 2.6rem;
   margin-left: 1.3rem;
-} /* after ve before pseudo elementlerini kullandiktan sonra mutlaka content'i kullanmalısınız */
+} /* before secilen selectorun sonuna content'i ekleyebiliriz */
+/*! after ve before pseudo elementlerini kullandiktan sonra mutlaka content'i kullanmalısınız */
 
 span.spanEl::before {
   content: "**👍####**";

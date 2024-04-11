@@ -14,11 +14,11 @@ form.form-login {
 
 form.form-login input[type="checkbox"]:checked {
   outline: 5px solid red;
-} /* buradaki kod baskin geldi ve asagidaki kodu ezdi */
+} /* detaylandirmadan dolayi buradaki kod baskin geldi ve asagidaki kodu ezdi */
 
 .chk-menu:checked {
   outline: 5px dotted rgb(1, 255, 77);
-} /* yukaridaki ile ayni ilevsellikte olsa da genellikle yukaridaki kod kullanilir */
+} /* yukaridaki ile ayni islevsellikte olsa da genellikle yukaridaki kod kullanilir */
 
 .emailFocus:focus {
   background-color: rgb(166, 240, 106);
@@ -44,19 +44,19 @@ ul.liste li:first-child {
   color: lawngreen;
   background-color: black;
   font-size: 1.2rem;
-} /* list elemanlarından ilkini secer */
+} /* elementlerden ilkini secer */
 
 ul.liste li:last-child {
   color: mediumblue;
   background-color: aqua;
   font-size: 1.2rem;
-} /* list elemanlarından sonuncusunu secer */
+} /* elementlerden sonuncusunu secer */
 
 ul.liste li:nth-child(3) {
   color: red;
   background-color: rgb(97, 96, 96);
   font-size: 1.2rem;
-} /* list elemanlarından parametre olarak verdigimiz  elemanı secer */
+} /* elementlerden parametre olarak verdigimiz elementi secer */
 
 table.tablo {
   border-collapse: collapse; /* defaulttan gelen cift kenarlık  */
