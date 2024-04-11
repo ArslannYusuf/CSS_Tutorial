@@ -1,32 +1,53 @@
 /* ! pseudo class'lar ':' ile tanımlanır */
 /* *  pseudo element'ler '::' ile tanımlanır */
 
-h1.title{
-    color: blue;
-    background-color:darkkhaki;
-    text-align: center;
-    margin-bottom: 2rem;
-    padding: 10px;
+h1.title {
+  color: blue;
+  background-color: darkkhaki;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 10px;
 }
 
-p.about::first-letter{
+p.about::first-letter {
+  font-size: 2rem;
+  color: darkred;
+} /* ilk harfi stillendirmek icin */
 
-    font-size: 2rem;
-    color: darkred;
+p.about::first-line {
+  color: darkgreen;
+  font-weight: bold;
+} /* ilk satira stillendirmek icin */
 
-}/* ilk harfi stillendirmek icin */
+p.about::selection {
+  color: red;
+  background-color: yellow;
+} /* satirlarda seciliyken stil vermek icin */
 
-p.about::first-line{
-    color: darkgreen;
-    font-weight: bold;
-}/* ilk satira stillendirmek icin */
+ul.list li::marker {
+  color: red;
+  font-size: 1.5rem;
+} /* madde isaretlendirmelerine stil vermek icin */
 
-p.about::selection{
-    color: red;
-    background-color: yellow;
-}/* satirlarda seciliyken stil vermek icin */
+h1.title::before {
+  content: "👌";
+  font-size: 2.6rem;
+  margin-right: 1.3rem;
+}
 
-ul.list li::marker{
-    color: red;
-    font-size: 1.5rem;
-}/* madde isaretlendirmelerine stil vermek icin */
+h1.title::after {
+  content: "👍";
+  font-size: 2.6rem;
+  margin-left: 1.3rem;
+} /* after ve before pseudo elementlerini kullandiktan sonra mutlaka content'i kullanmalısınız */
+
+span.spanEl::before {
+  content: "**👍####**";
+  color: rgb(25, 0, 255);
+  margin-right: 1rem;
+}
+
+span.spanEl::after {
+  content: "👍";
+  margin-left: 0.7rem;
+}
