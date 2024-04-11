@@ -44,32 +44,36 @@ ul.liste li:first-child {
   color: lawngreen;
   background-color: black;
   font-size: 1.2rem;
-}/* list elemanlarından ilkini secer */
+} /* list elemanlarından ilkini secer */
 
 ul.liste li:last-child {
   color: mediumblue;
   background-color: aqua;
   font-size: 1.2rem;
-}/* list elemanlarından sonuncusunu secer */
-
+} /* list elemanlarından sonuncusunu secer */
 
 ul.liste li:nth-child(3) {
   color: red;
   background-color: rgb(97, 96, 96);
   font-size: 1.2rem;
-}/* list elemanlarından parametre olarak verdigimiz  elemanı secer */
+} /* list elemanlarından parametre olarak verdigimiz  elemanı secer */
 
-
-table.tablo{
-    border-collapse: collapse; /* defaulttan gelen cift kenarlık  */
-    margin: 5rem;
-
+table.tablo {
+  border-collapse: collapse; /* defaulttan gelen cift kenarlık  */
+  margin: 5rem;
+  border: 2px solid black;
 }
 
-table.tablo tbody tr:nth-child(odd){
-    background-color: rgb(211, 25, 25);
-}/* nth-child(odd) tek satirdaki elemanlari secer */
+table.tablo th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+}
 
-table.tablo tbody tr:nth-child(even){
-    background-color: rgb(160, 159, 159);
-}/* nth-child(even) cift satirdaki elemanlari secer */
+table.tablo tbody tr:nth-child(odd) {
+  background-color: rgb(211, 25, 25);
+} /* nth-child(odd) tek satirdaki elemanlari secer */
+
+table.tablo tbody tr:nth-child(even) {
+  background-color: rgb(160, 159, 159);
+} /* nth-child(even) cift satirdaki elemanlari secer */
