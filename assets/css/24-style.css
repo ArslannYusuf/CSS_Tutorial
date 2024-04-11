@@ -1,0 +1,75 @@
+button {
+  display: inline-block;
+  margin: 2rem;
+  width: 100px;
+  background-color: blue;
+  color: aliceblue;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+form.form-login {
+  margin: 2rem;
+}
+
+form.form-login input[type="checkbox"]:checked {
+  outline: 5px solid red;
+} /* buradaki kod baskin geldi ve asagidaki kodu ezdi */
+
+.chk-menu:checked {
+  outline: 5px dotted rgb(1, 255, 77);
+} /* yukaridaki ile ayni ilevsellikte olsa da genellikle yukaridaki kod kullanilir */
+
+.emailFocus:focus {
+  background-color: rgb(166, 240, 106);
+} /* ilgili kısımda focus olunca yapılan stillendirmeler */
+
+a.link {
+  font-size: 1.7rem;
+}
+
+a.link:active {
+  color: rgb(255, 0, 0);
+} /* ilgili elemente tiklandiginda esnada yapilan stillendirmeler */
+
+a.link:visited {
+  color: rgb(189, 71, 16);
+} /* daha oncesinde ziyeret edilen sayfalar */
+
+a.link:link {
+  color: rgb(0, 0, 255);
+} /* defaultta var olan stillendirmeler */
+
+ul.liste li:first-child {
+  color: lawngreen;
+  background-color: black;
+  font-size: 1.2rem;
+}/* list elemanlarından ilkini secer */
+
+ul.liste li:last-child {
+  color: mediumblue;
+  background-color: aqua;
+  font-size: 1.2rem;
+}/* list elemanlarından sonuncusunu secer */
+
+
+ul.liste li:nth-child(3) {
+  color: red;
+  background-color: rgb(97, 96, 96);
+  font-size: 1.2rem;
+}/* list elemanlarından parametre olarak verdigimiz  elemanı secer */
+
+
+table.tablo{
+    border-collapse: collapse; /* defaulttan gelen cift kenarlık  */
+    margin: 5rem;
+
+}
+
+table.tablo tbody tr:nth-child(odd){
+    background-color: rgb(211, 25, 25);
+}/* nth-child(odd) tek satirdaki elemanlari secer */
+
+table.tablo tbody tr:nth-child(even){
+    background-color: rgb(160, 159, 159);
+}/* nth-child(even) cift satirdaki elemanlari secer */
