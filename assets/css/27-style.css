@@ -25,7 +25,7 @@ a.link + p {
   background-color: violet;
 }
 
-/*!  " ~ " isareti kullanilarak bir elementten hemen sonra gelen tum elementleri secer */
+/*!  " ~ " isareti kullanilarak bir elementten hemen sonra gelen tum(belirtilen) elementleri secer */
 
 div.box ~ a{
     color:darkred;
