@@ -4,12 +4,31 @@
     ul.list ol > li ==> ol'un icerisindeki ol'un child'i olan li'leri secer
 */
 
-  div.box > p{
-    color: red;
+div.box > p {
+  color: red;
+}
 
-  }
+ul.list ol > li {
+  color: red;
+}
 
+/* ----------------------------------------------------------------------------------- */
 
-  ul.list ol > li{
-    color: red;
-  }
+/*!   " + " isareti kullanilarak bir elementten hemen sonra gelen ilk elementi secer */
+
+div.box + a {
+  color: rgb(42, 224, 66);
+  font-size: 2 rem;
+}
+
+a.link + p {
+  background-color: violet;
+}
+
+/*!  " ~ " isareti kullanilarak bir elementten hemen sonra gelen tum elementleri secer */
+
+div.box ~ a{
+    color:darkred;
+    font-weight: 900;
+    font-size: 1.5rem;
+} 
