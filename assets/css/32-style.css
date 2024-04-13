@@ -1,0 +1,76 @@
+/* 
+    ** property olarak "flex" verirsek, flexbox icindeki elemanlarin buyukluklerini, buyume ve kuculme oranlarini belirler.
+    ** Flex stillendirme elemaninin kendisine uygulanir 
+    ** display: flex; durumu parent'e verilir
+    ** flex: (value); durumu child'e verilir
+
+    flex: 0 1 auto;
+
+    */
+
+.container div {
+  width: 100px;
+  text-align: center;
+  padding: 10px;
+}
+
+div.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; /* default flex-start */
+  height: 100vh;
+  align-items: stretch; /* default stretch */
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-content: center; /* align-items ve align-content'i birlikte kullanilir */
+}
+
+/* 
+!    flex: 0 1 100px;   olarak verilen degerler, flex-grow, flex-shrink, flex-basis degerleridir.
+!    flex-grow: 0; --> genisleme
+!    flex-shrink: 1; --> daralma
+!    flex-basis: 100px; --> baslangic degerleri
+
+*    NOT: Verilen degerlere gore responsive konusunda otomatik olarak birbirlerini etkileyerek olceklendirme olur.
+*/
+
+/* 
+!   gap         --> yatay ve dikey boslugu ayarlar  
+!   row-gap     --> dikey boslugu ayarlar
+!   column-gap  --> yatay boslugu ayarlar
+*/
+
+
+/* 
+!   flex-wrap: nowrap;  --> varsayilan nowrap, herhangi bir deger verilmezse, default olarak alt satira kaydirilmaz
+!   flex-wrap: wrap;    --> sayfayi kucultme esnasinda ekrana sigmayan elemenlar alt satira kaydirilir
+!   flex-wrap: wrap-reverse; --> sayfayi kucultme esnasinda ekrana sigmayan elemenlar ters yonde alt satira kaydirilir
+
+*   NOT: birden fazla satir olusturuldugunda bu satirlarin genel dizilimi "align-content" ile ayarlanabilir
+*/
+
+
+div.container div:nth-child(1) {
+  background-color: red;
+  flex: 0 1 125px;
+}
+
+div.container div:nth-child(2) {
+  background-color: rgb(68, 0, 255);
+  flex: 1 3 555px;
+}
+
+div.container div:nth-child(3) {
+  background-color: rgb(14, 154, 197);
+  flex: 0 2 100px;
+}
+
+div.container div:nth-child(4) {
+  background-color: rgb(55, 235, 100);
+  flex: 3 0 50px;
+}
+
+div.container div:nth-child(5) {
+  background-color: rgb(194, 15, 170);
+  flex: 2 2 5px;
+}
