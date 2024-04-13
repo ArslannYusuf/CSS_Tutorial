@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fontasome</title>
+
+    <!--! *** cdn linkini buraya eklemeliyim *** -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -13,6 +15,19 @@
     />
   </head>
   <body>
+    <!--! fontawesome'dan aldigim iconları <i> tagi ile buraya eklemeliyim -->
+
+    <!-- *   "fa-brands" marka iconlari icin kullaniyoruz  
+        *   "fa-2x" boyut 
+        *   "fa-paper-plane" ikon'un ismi 
+    
+        !   pseudo olarak eklemek icin;
+        *   Orn:
+        *   ul li::before {
+            font: var(--fa-font-solid);
+            content: "\f1d8";
+            }-->
+
     <ul class="list">
       <li>
         <i
@@ -41,7 +56,7 @@
         }
         ul.list li::before {
           font: var(--fa-font-solid);
-          content: "\f121"; /* fontawesome sayfasinda ilgili butonun unicode'nu aldim  */
+          content: "\f121"; /* fontawesome sayfasinda ilgili butonun unicode'nu aldim, basina " \ " koyuyoruz  */
           padding-right: 10px;
           font-size: 0.8rem; /* rem yaziminda 0 altindaki degerler " .8 rem" olarak da yazilir*/
         }
