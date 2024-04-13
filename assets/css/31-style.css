@@ -1,0 +1,52 @@
+div.container {
+  display: flex; /* flex defaultta yatay(row) olarak hizalar */
+  flex-direction: row; /* row yerine column ile dikey(column) hizalayabiliriz, default degeri yine row */
+
+  /*!    ONEMLI: sadece "flex-direction: row;" oldugunda justify-content(yatayda) ve align-items(dikeyde) degerlerini kullanabilirim */
+
+  justify-content: flex-start; /* solda hizalar, ayrica default degeri yine flex-start */
+  justify-content: flex-end; /* sagda hizalar */
+  justify-content: center; /* ortada hizalar */
+  justify-content: space-between; /* bas ve sondaki elementler saga-sola hizalanirken aradaki elementler ise ortada otomatik olarak ortada hizalanir */
+  justify-content: space-evenly; /* her element arasinda ayni uzunlukta bosluk olusturur */
+  justify-content: space-around; /* bas ve sondaki bosluklar ortadaki elementlerin arasindaki boslugun yarisi oraninda olacak sekilde 
+                                    sayfadaki butun elementler arasinda ortalama islemi yapilarak hizalanir */
+
+  height: 100vh; /* align-items degerlerini goruntulemek icin height degeri verdim */
+  align-items: flex-start; /* yukari hizalar */
+  align-items: flex-end; /* asagi hizalar */
+  align-items: center; /* ortada hizalar */
+  align-items: stretch; /* elementlerin tamamini kaplar, ayrica default degeri yine stretch */
+  align-items: unset; /* default degeri alir */
+}
+
+/*     
+  !  NOT:   flex-direction: row; oldugunda justify-content yatayda hizalar, align-items dikeyde hizalar ,
+  !         flex-direction: column; oldugunda align-items yatayda hizalar, justify-content dikeyde hizalar !!!!!
+*/
+
+.container div {
+  width: 100px;
+  text-align: center;
+  padding: 10px;
+}
+
+div.container div:nth-child(1) {
+  background-color: red;
+}
+
+div.container div:nth-child(2) {
+  background-color: rgb(206, 129, 129);
+}
+
+div.container div:nth-child(3) {
+  background-color: rgb(72, 188, 235);
+}
+
+div.container div:nth-child(4) {
+  background-color: rgb(22, 192, 50);
+}
+
+div.container div:nth-child(5) {
+  background-color: rgb(67, 199, 199);
+}
