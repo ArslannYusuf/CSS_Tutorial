@@ -1,0 +1,82 @@
+/* 
+border: genislik - tip - renk
+
+border:5px solid red;
+border:3px dashed blue;
+
+
+* border-radius --> cercevelerin koselerini yumusatmak icin kullanilir
+*/
+
+.box-1 {
+  border: 5px solid red; /* solid yani dörtgen */
+  padding: 15px;
+  text-align: center;
+  font-size: 2rem;
+  margin: 3rem;
+}
+
+.box-2 {
+  border: 5px dotted rgb(2, 22, 136); /* dotted yani noktali dörtgen */
+  padding: 15px;
+  text-align: center;
+  font-size: 2rem;
+  margin: 3rem;
+}
+
+.box-3 {
+  border: 5px dashed rgb(179, 34, 34); /* dashed yani kesik dörtgen */
+  padding: 15px;
+  text-align: center;
+  font-size: 2rem;
+  margin: 3rem;
+}
+
+.box-4 {
+  border: 10px ridge rgb(70, 190, 40); /* ridge yani cift katman cerceveli dörtgen */
+  padding: 15px;
+  text-align: center;
+  font-size: 2rem;
+  margin: 3rem;
+}
+
+.box-5 {
+  border: 10px outset gold; /* outset yani yukaridan asagiya koyu renk degisimi olan dörtgen */
+  padding: 15px;
+  text-align: center;
+  font-size: 2rem;
+  margin: 3rem;
+}
+
+.box-6 {
+  border: 10px inset magenta; /* inset yani asagidan yukariya koyu renk degisimi olan dörtgen */
+  padding: 15px;
+  text-align: center;
+  font-size: 2rem;
+  margin: 3rem;
+}
+
+.box-7 {
+  border: 10px double blue; /* double yani iki katmanli cerceveli dörtgen */
+  text-align: center;
+  font-size: 2rem;
+  margin: 3rem;
+}
+
+.box-8 {
+  border: 10px groove rgb(108, 243, 30); /* groove yani iki katmanli, cift renkli cerceveli dörtgen */
+  text-align: center;
+  font-size: 2rem;
+  margin: 3rem;
+}
+
+.box-9 {
+  border-bottom: 10px solid rgb(211, 243, 30); /* border-bottom sadece alt cerceve... vb. */
+  border-right: 10px groove rgb(30, 183, 243); /* border-right sadece sag cerceve... vb. */
+  border-top: 10px dashed rgb(30, 243, 48); /* border-top sadece ust cerceve... vb. */
+  text-align: center;
+  font-size: 2rem;
+  margin: 3rem;
+}
+
+
