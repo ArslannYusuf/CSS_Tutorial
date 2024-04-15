@@ -6,7 +6,20 @@ background-attachment: fixed; -- sabit olcekleme yapar
 background-position: center; -- default degeri center'tir
 
 
-*/
+background-size: cover CSS özelliği, bir arka plan görüntüsünün boyutunu belirlemek için kullanılır.
+ Bu özellik, arka plan görüntüsünü, belirtilen öğenin boyutuna uyacak şekilde otomatik olarak ölçekler. 
+ Ancak, bu işlem sırasında oranları korur ve görüntüyü tamamen örtmek veya boşluk bırakmamak için çaba gösterir.
+
+
+ 
+background-size: contain CSS özelliği, bir arka plan görüntüsünün boyutunu belirlemek için kullanılır. 
+Bu özellik, belirtilen öğenin içine sığacak şekilde arka plan görüntüsünü otomatik olarak ölçekler.
+Örneğin, bir arka plan görüntüsü bir div öğesinin arkasına yerleştirildiğinde, 
+background-size: contain özelliği bu görüntünün div öğesine tamamen sığmasını sağlar. 
+Ancak, görüntünün oranları korunur ve boşluk oluşabilir. Bu, görüntünün kırpılmadan tamamının görülebilmesini sağlar, 
+ancak belirli durumlarda arka planın tamamen doldurulmamasına neden olabilir.
+
+ */
 
 body {
   background-image: url("../img/gunesin_dogusu_ve_batisi.jpg");
