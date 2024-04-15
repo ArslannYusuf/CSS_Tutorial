@@ -1,0 +1,29 @@
+/* 
+! 
+*/
+
+.bg {
+  padding: 50px;
+  margin: 50px;
+  margin-bottom: 3rem;
+}
+
+.bg-1 {
+  background-image: linear-gradient(yellow, violet,rgb(89, 89, 193));
+
+
+
+}
+
+.bg-2{
+    background-image: linear-gradient(to right, gray, red,black);
+}
+
+.bg-3{
+    background-image: linear-gradient(25deg, red, blue,red,blue,red,blue);
+}
+
+
+.bg-4{
+    background-image: linear-gradient(to left, gold 25%,cyan 5%,magenta 90%);
+}
