@@ -1,0 +1,49 @@
+/* 
+background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg");
+background-repeat: no-repeat; -- resmin tekrar etmemesi icin -- default degeri repeat'tir
+background-size: cover; -- div lemaninin hacmi kadar resmi doldurur
+background-attachment: fixed; -- sabit olcekleme yapar
+background-position: center; -- default degeri center'tir
+
+
+*/
+
+body {
+  background-image: url("../img/gunesin_dogusu_ve_batisi.jpg");
+  background-repeat: no-repeat;
+  /* background-size: cover; */ /* resmi buyuterek kirpar.. dikkat!!! */
+  /* background-size: contain;  */ /*-- sayfanin tamamini kaplar*/
+  /* background-attachment: fixed; */
+  height: 100vh;
+  background-position: center top;
+  /* padding: 100px; */
+  background-size: 200px;
+}
+
+.banner-1 {
+  background-image: url("../img/bg.jpg");
+  height: 50vh;
+  background-repeat: repeat-y;
+  background-size: 500px;
+  background-position: bottom right; /* pozisyon ilki yataydan ikincisi dikeyden */
+  background-size: contain;
+}
+
+/* background-attachment: resmin uzerinde scrolling yapabilmek icin */
+
+.banner-2 {
+  background-image: url("../img/nature.jpg");
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: red;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: justify;
+}
