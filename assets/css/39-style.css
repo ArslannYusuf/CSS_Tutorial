@@ -24,3 +24,21 @@ relative-- bulunduklari konuma goreceli olarak konumlanir (top,right,left,bottom
   left: 150px;
   z-index: -2;
 }
+
+/* 
+position: absolte --> parentina gore konumlanir, parent oldugunu bildirmeliyim
+ */
+
+div.parent {
+  background-color: aqua;
+  height: 50vh;
+  position: relative;
+}
+
+div.parent img {
+  widht: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 50px;
+  right: 75px;
+}
