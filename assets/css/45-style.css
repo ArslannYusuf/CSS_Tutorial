@@ -5,7 +5,7 @@ yazilara golge vermek icin --> text-shadow
 elementlere golge vermek icin --> box-shadow
 
 x, y, blur, spread, color;
-yatay uzaklık, dikey uzaklik,bulaniklik, yayma katsayisi, rengi
+yatay uzaklık, dikey uzaklik,bulaniklik, yayma katsayisi (sadece box-shadow'da), rengi
 
 
 */
@@ -21,4 +21,16 @@ yatay uzaklık, dikey uzaklik,bulaniklik, yayma katsayisi, rengi
 
 .title-1{
     text-shadow: 3px 5px 2px rgb(255, 0, 0), 5px 10px 4px rgb(0, 0, 255);
+}
+
+.title-2{
+    text-shadow: 7px 4px 3.7px rgb(131, 23, 131);
+}
+
+.title-3{
+    box-shadow: 6px 6px 10px rgb(255, 0, 0);
+}
+
+.title-4{
+    box-shadow: 6px 6px 10px rgb(0, 0, 255), -6px -6px 10px red
 }

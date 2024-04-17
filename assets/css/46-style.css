@@ -1,0 +1,27 @@
+/* 
+ @media tur and (ozellik and|or ozellik)
+
+ tur --> screen: ekran
+        print: yazdirma
+        all: tumu
+
+ozellik --> min-width: en az genislik
+            max-width: en buyuk genislik
+            min-height: en az yukseklik
+            max-height: en buyuk yukseklik
+
+    ------------------------------------------        
+    cok kucuk cihazlar
+    telefonlar
+    @media (min-width: 576px) 
+
+    tabletler
+    @media (min-width: 768px)
+
+    ekranlar
+    @media (min-width: 1200px)
+
+    cok buyuk ekranlar
+    @media (min-width: 1400px)
+*/
+
