@@ -50,7 +50,7 @@ tur --> ease, linear, ease-in, ease-out, ease-in-out
   font-size: 1.4rem;
   font-weight: 800;
   cursor: pointer;
-  transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;  /* all icerisindeki tum ozellikleri secer, tasarruf ;)*/
 }
 
 .btn:active {
