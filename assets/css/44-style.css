@@ -1,0 +1,62 @@
+/* 
+transition: elemntlerin degisen CSS ozelliklerini takip ederk eski degerden yeni degere yumusak bir gecis saglar
+
+* 2 adimda uygulanir !!!
+
+
+! transition: stil_ismi, süre, tur, gecikme_suresi
+
+tur --> ease, linear, ease-in, ease-out, ease-in-out
+*/
+
+.title {
+  color: blue;
+  text-align: center;
+  background-color: aqua;
+  transition: background-color 2s, color 2s;
+}
+
+.title:hover {
+  background-color: violet;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 3rem;
+}
+
+.box-1 {
+  background-color: red;
+  border-radius: 50%;
+  transition: background-color ease-in 1s, border-radius ease-out 1s;
+}
+
+.box-1:active {
+  background-color: aquamarine;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: gray;
+  display: inline-block;
+  padding: 10px;
+  margin: 5rem;
+  border: solid red;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all ease-in-out .3s;
+}
+
+.btn:active {
+  background-color: chartreuse;
+  border: none;
+  color: red;
+  transform: rotate(360deg) scale(2) translate(70%,-180%);
+
+}
