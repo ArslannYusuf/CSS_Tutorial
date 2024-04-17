@@ -1,0 +1,24 @@
+/* 
+shadow --> golge
+
+yazilara golge vermek icin --> text-shadow
+elementlere golge vermek icin --> box-shadow
+
+x, y, blur, spread, color;
+yatay uzaklık, dikey uzaklik,bulaniklik, yayma katsayisi, rengi
+
+
+*/
+
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    font-size: 2.5rem;
+    margin: 2rem;
+
+}
+
+.title-1{
+    text-shadow: 3px 5px 2px rgb(255, 0, 0), 5px 10px 4px rgb(0, 0, 255);
+}
